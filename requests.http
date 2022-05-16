@@ -1,0 +1,52 @@
+POST http://localhost:5000/task HTTP/1.1
+content-type: application/json
+
+{
+    "name": "New task2",
+    "description": "Task added with an api request!",
+    "password": "Api123"
+}
+
+###
+
+GET http://localhost:5000/task HTTP/1.1
+
+### 
+
+GET http://localhost:5000/task/1 HTTP/1.1
+
+###
+
+PUT http://localhost:5000/task/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "abc",
+    "description": "This is task, updated"
+}
+
+###
+
+DELETE http://localhost:5000/task/2 HTTP/1.1
+content-type: application/json
+
+{
+    "password": "Api123"
+}
+
+###
+
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "name": "asfasfg"
+}
+
+###
+
+GET http://localhost:5000/user HTTP/1.1
+
+###
+
+GET https://frozen-hamlet-42478.herokuapp.com/task HTTP/1.1
